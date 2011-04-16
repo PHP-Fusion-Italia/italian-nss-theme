@@ -1,0 +1,497 @@
+/* 
+-------------------------------------------
+	CSS MAP
+-------------------------------------------
+A)  GENERAL LAYOUT
+	1.  Header
+	2.  Menu
+	3.  Banner
+	4.  Fade Slider
+	5.  Nivo Slider
+	6.  Headlines
+	7.  General Container
+	8.  Home Page Intro Text
+	9.  Home Page Widgets
+	10. Twitter
+	11. Footer Widgets
+	12. Copyright
+
+B)	PAGE STYLES
+	1. Page Top Header
+	2. Page Container
+	3. Page Right Sidebar
+	4. Page Nav Numbers
+	5. Page Image Border Skin
+	
+C)  PAGE BLOG 
+	1. Blog Container
+	2. Blog Title & Icons & Description
+	3. Blog & Site Comments
+
+D)	PAGE PORTFOLIO
+	1. Portfolio Container
+	2. Portfolio Title & Icon & Description
+
+E) 	PAGE CONTACT
+	1. Contact Form
+	2. Contact Map
+	
+F)  SETTINGS !IMPORTANT
+
+-------------------------------------------
+*/
+
+body{
+	line-height:21px;
+	color:#555555;
+	font:13px/20px Tahoma,Arial,Helvetica,sans-serif;
+}
+
+/*	
+	A) GENERAL LAYOUT
+-------------------------------------------
+	1. Header
+-------------------------------------------
+*/
+.header{					display:table;	width:100%;	height:115px;	}
+.header_container{			margin-left:auto;	margin-right:auto;	width:960px;	display:table;	}
+.header_logo{				float:left;	display:table;	}
+/*	
+-------------------------------------------
+	2. Menu
+-------------------------------------------
+*/
+.overallmenu{				float:right;	display:table; }
+.overallmenu ul{				margin: 0;	padding: 0;	list-style-type: none;	}
+.overallmenu ul ul {			padding-bottom:5px;	padding-top:13px;	top:30px;	}
+.overallmenu ul ul ul{			top:0;	padding-top:0;	padding-left:9px;	}
+.overallmenu ul li{			position: relative;	display: inline;	float: left;	z-index:100;	}
+.overallmenu ul li ul{			position: absolute;	left: 0;	display: block;	 visibility: hidden;}
+.overallmenu ul li ul li {		display: block;	padding:0; float: none;	}
+.overallmenu ul li ul li a{		display: block;	padding:10px;	}
+* html .overallmenu ul li a{ 	display: inline-block;	}
+/*	
+-------------------------------------------
+	3. Banner
+-------------------------------------------
+*/
+.banner{					width:100%;	}
+.banner_model_1{			margin-left:auto;	margin-right:auto;	width:960px;	padding-bottom:20px;	padding-top:20px;  }
+.banner_model_2{			margin-left:auto;	margin-right:auto;	width:100%;	}
+.slider_default img{			border:10px solid #fff;	}
+/*	
+-------------------------------------------
+	4. Fade Slider
+-------------------------------------------
+*/
+.slider_content{			width:100%;	margin-left:auto;	margin-right:auto;	z-index:0;	}
+.slider_full{				width:100%;	margin-left:auto;	margin-right:auto;	z-index:0;	}
+.slider_item{				width:100%; text-align:center; }
+.slider_item a{				display:block;	height:100%;	width:100%;	}
+.slider_buttons{			width:960px;		margin-left:auto;	margin-right:auto;	padding-top:20px; display:table; 	z-index:1; position:relative; }
+.slider_click{				display:table;	margin-left:auto;	margin-right:auto;	}
+.slider_click li {			width:21px;	height:21px;	list-style:none;	float:left;	margin:0; margin-right:5px; margin-left:5px;	font-size:10px;		cursor:pointer;		background:url('../images/banner_button.png') no-repeat left;	}
+.slider_click .selected{		width:21px;	height:21px;	top:0;	left:0;	float:left;	background:url(../images/banner_button_active.png) no-repeat left;	}
+.hover {						width:21px;	height:21px;	top:0;	left:0;	float:left;	background:url(../images/banner_button_active.png) no-repeat left;	display:none;	}
+.slider_left_image {			float:left;		text-align:left;	margin-right:20px; }
+.slider_right_image {		float:right;	text-align:right;	margin-left:20px;	}
+.slider_text_full {			display:table;	float:left;		text-align:left;	width:100%;	padding-top:10px;	}
+.slider_text {				float:left;	text-align:left; 	}
+.slider_text_more {			display:table;	letter-spacing:0.4px;	font-weight:normal;	font-size:20px; color:#666;	text-align:left; float:left;	width:200px; height:60px;	margin-top:18px; background:url(../images/more.png) no-repeat scroll center top transparent;	}
+.slider_text_more span{		display:table; padding-left:30px; padding-top:15px; float:left;	}
+.slider_left_image,
+.slider_right_image	{		background-image:url(../images/icons/fade_loader.gif);	}
+/*	
+-------------------------------------------
+	5. Nivo Slider
+-------------------------------------------
+*/
+#sliderNivo {					position:relative;	background:#202834 url(../images/icons/loading.gif) no-repeat 50% 50%;	}
+#sliderNivo img {					position:absolute;	top:0px;	left:0px;	display:none;	}
+#sliderNivo a {					border:0;	}
+.nivoSlider {					position:relative; }
+.nivoSlider img {					position:absolute;	top:0px;	left:0px;	}
+.nivoSlider a.nivo-imageLink {	position:absolute;	z-index:60;	display:none;	top:0px;	left:0px;	width:100%;	height:100%;	border:0;	padding:0;	margin:0;	}
+.nivo-slice {					position:absolute;	z-index:50; display:block;		height:100%;	}
+.hide_desc { 					position:absolute; z-index:50;  margin-left:10px; color:#000;  }
+.holder_desc { 					display:none;  }
+.ndescription { 					display:inline-block; background:#333; padding:10px;	letter-spacing:0.4px;	font-weight:normal;	line-height:100%; }
+.ntitle {  						display:inline-block; padding:10px;	font-family:"Trebuchet MS"; 	letter-spacing:0.4px;	font-weight:normal;	line-height:100%;	}
+.nivo-controlNav {				position:absolute;	bottom:-50px; }
+.nivo-controlNav a {				position:relative;	z-index:99;	cursor:pointer;	display:block;	width:21px;	height:21px;	background:url(../images/banner_button.png) no-repeat;	border:0;	float:left;	margin-left:5px;	margin-right:5px;	text-indent:-99999px;	}
+.nivo-controlNav a.active {		display:block;	width:21px;	height:21px;	background:url(../images/banner_button_active.png) no-repeat;	border:0;	float:left;	}
+.nivo-directionNav a {			position:absolute;	top:45%;	z-index:99;	cursor:pointer;	display:block;	width:45px;	height:45px;	background:url(../images/arrows.png) no-repeat;	text-indent:-9999px;	border:0;	}
+a.nivo-nextNav {					background-position:-45px 0;	right:10px;	}
+a.nivo-prevNav {					left:10px;	}
+/*	
+-------------------------------------------
+	6. Headlines
+-------------------------------------------
+*/
+.headlines{						background:#080809 url(../images/headlines_bg.png) top repeat-x;	display:block;	width:100%;	min-height:65px;	}
+.headlines_content{				margin-left:auto;	margin-right:auto;	padding-top:10px;	width:960px;	display:table;	}
+.headlines_icon{				float:left;	display:table;	color:#999;	min-width:43px;	}
+.headlines_icon_text{			float:left;	display:table;	color:#a6a6a6;	margin-left:10px;	margin-top:15px;	}
+.headlines_text{				float:left;	display:table;	color:#999;	margin-left:10px;	margin-top:15px; font-size:11px; }
+.headlines_text a{				color:#999;	}
+.headlines_text a:hover{			color:#ccc;	}
+.headlines_image{				float:left;	display:table;	}
+.bullhorn{						margin-left:5px; float:right; }
+/*	
+-------------------------------------------
+	7. General Container
+-------------------------------------------
+*/
+.container{				width:100%;	background:#ffffff;	}
+.site_container{		width:100%;	display:table;	}
+.site_container_bg{		background:url(../images/container_top_bg.png) top repeat-x;	width:100%;	display:table;	padding-top:40px;	}
+.site_content{			margin-left:auto;	margin-right:auto;	width:960px;	display:table;	}
+/*	
+-------------------------------------------
+	8. Home Page Intro Text
+-------------------------------------------
+*/
+.intro_container{		padding-top:20px; 	padding-bottom:30px;	background:url(../images/intro_top_bg.png) top repeat-x;	width:100%;	display:table;	}
+.intro_content{			display:table;	width:960px;	margin-left:auto;	margin-right:auto;	}
+.intro_text {			font-family:"Trebuchet MS",Arial,Helvetica,san-serif; 	letter-spacing:0.4px;		font-weight:normal;		line-height:27px;	width:725px;	float:left;	}
+.intro_image{			color:#bababa; background:url(../images/intro_image.png) top repeat-x;	width:230px;	min-height:62px;	float:right;	text-align:center;	margin-top:10px; padding-top:25px;	}
+.intro_image a{			color:#bababa; }
+/*	
+-------------------------------------------
+	9. Home Page Widgets
+-------------------------------------------
+*/
+.home_widgets{			width:100%;		float:left;	display:table;	padding-bottom:50px;	}
+.home_widgetbox{		width:300px;	float:left;	display:table;	margin-right:30px;	}
+.home_widgetbox_last{	width:300px;	float:left;	display:table;	}
+.home_widget_image{		background:url(../images/widget_image.png) top repeat-x;	float:left;	display:table;	margin-bottom:10px;	width:300px;	height:140px;	text-align:center;	padding-top:10px;	}
+.home_widget_content{	float:left;	display:table;	margin-bottom:10px;	}
+/*	
+-------------------------------------------
+	10. Twitter
+-------------------------------------------
+*/
+.twt_headlines{			margin-top:10px;	margin-bottom:50px;	display:table;	}
+.twt_image{				float:left;	display:table;	margin-right:20px;	}
+.twt_container{			float:left;	width:800px;	line-height:30px;	font-family:"Trebuchet MS"; 		color:#999;	}
+.twt_smallby{ 				font-size:11px; font-family:tahoma; font-style:italic; }
+/*	
+-------------------------------------------
+	11. Footer Widgets
+-------------------------------------------
+*/
+.footer{						display:table;	width:100%;	}
+.footer_widget{					color:#999; background:#080809 url(../images/footer_widget_bg.png) top repeat-x;	width:100%;	min-height:270px;	font-size:11px;	}
+.footer_widgets{				padding-top:25px;	padding-bottom:25px;	margin-left:auto;	margin-right:auto;	width:960px;	display:table;	}
+.footer_widgets li{				background:url(../images/icons/arrow.gif) center left no-repeat;	border-bottom:1px solid #1d1d1d;	padding-top:5px;	padding-left:10px;	padding-bottom:5px;	width:125px;	}
+.footer_widgets a{				color:#555;	}
+.footer_widgets a:hover{			color:#ccc;	}
+.footer_widgets h3{ 				color:#ccc; }
+.footer_widgetleft{				width:150px;	margin-right:20px;	float:left;	min-height:270px;	}
+.footer_widgetleft ul ul *{		display:none;	}
+.footer_widget_firstly{			margin-bottom:20px;	}
+.footer_widget_center{			margin-bottom:20px;	float:left;	}
+.footer_widgetcenter{			background:url(../images/footer_widget_line.png) left no-repeat;	width:425px;	float:left;		margin-right:20px;	padding-left:20px;	min-height:270px;	}
+.footer_widgetcenter_left{		float:left;	margin-bottom:20px;	width:225px;	}
+.footer_widgetcenter_right{		float:right;	margin-bottom:20px;	}
+.footer_widgetcenter_top{		margin-bottom:20px;	}
+.footer_widgetright{			background:url(../images/footer_widget_line.png) left no-repeat;	min-height:270px;	width:300px;	float:left;	padding-left:20px;	}
+.footer_contact ul li{				width:275px;	padding:0;	margin:0;	background:none;	padding-bottom:5px;	margin-bottom:5px;	padding-left:25px;	}
+.footer_contact ul li.address{		background:url(../images/icons/footer_home.png) no-repeat scroll left 4px transparent;		}
+.footer_contact ul li.phone{		background:url(../images/icons/footer_phone.png) no-repeat scroll left 4px transparent;		}
+.footer_contact ul li.email{		background:url(../images/icons/footer_email.png) no-repeat scroll left 4px transparent;		}
+.footer_contact ul li.support{		background:url(../images/icons/footer_support.png) no-repeat scroll left 4px transparent;		}
+.footer_comments ul li{			width:170px; background:url(../images/icons/footer_comment.png) no-repeat scroll left 4px transparent; padding:0;	margin:0;	padding-bottom:5px;	margin-bottom:5px;	padding-left:25px;	}
+.footer_posts ul li{				width:170px; background:url(../images/icons/footer_posts.png) no-repeat scroll left 4px transparent; padding:0;	margin:0;	padding-bottom:5px;	margin-bottom:5px;	padding-left:25px;	}
+/*	
+-------------------------------------------
+	12. Copyright
+-------------------------------------------
+*/
+.footer_copyright{				width:100%;	min-height:50px;	color:#fff;		font-size:11px; 	display:table;	}
+.copyright_container{			padding-top:15px;	padding-bottom:15px;	margin-left:auto;	margin-right:auto;	width:960px;	display:table;	}
+.copyright_text{				float:left;	display:table;	}
+.copyright_text a{				color:#fff;	font-weight:bold;	}
+.copyright_text a:hover{			color:#ccc;	}
+.footer_social_networks {		display:table;	float:right;	}
+.footer_social_networks ul li{		float:left;	margin-left:7px;	}
+
+
+
+
+/*	
+	B) PAGE STYLES
+-------------------------------------------
+	1. Page Top Header
+-------------------------------------------
+*/
+.page_top{					width:100%;	min-height:130px;	}
+.page_top_container{		margin-left:auto;	margin-right:auto;	display:table;	width:960px;	}
+.page_top_content{			width:700px; float:left; color:#fff;	font-family:"Trebuchet MS",Arial,Helvetica,san-serif; 		letter-spacing:0.4px;		padding-bottom:10px;		font-weight:normal;		line-height:100%;	margin-top:40px;	}
+.page_top_title{			font-size:28px;	}
+.page_top_desc{				font-size:17px;	margin-top:5px; display:table; float:left; }
+.page_top_content a,
+.page_top_content a:hover{	color:#fff;}
+.page_top_search{			width:245px;	height:57px;	margin-top:37px;	float:right;	}
+.page_top_search input {		margin-top:20px;	margin-left:45px;	border:0;	background:none;	/*text-shadow: 1px 1px 0px #555;*/ color:#fff;	font-family:tahoma;	font-size:11px; width:180px;	}
+
+
+/*	
+-------------------------------------------
+	2. Page Container
+-------------------------------------------
+*/
+.page_container_bg{		min-height:400px; width:100%;	padding-top:40px; padding-bottom:20px;	}
+.page_container{		margin-bottom:30px;		margin-left:auto;	margin-right:auto;	width:960px;	display:table;	background:url(../images/end_shadow.png) no-repeat scroll 710px bottom transparent;	 }
+.page_content{ 			float:left;	padding:0;	width:720px; background:url(../images/begin_shadow.png) no-repeat scroll 710px top transparent;	}
+.page_content_text{		display:table;	padding-right:30px;	}
+
+
+.page_full_container{	margin-bottom:30px;		margin-left:auto;	margin-right:auto;	width:960px;	display:table;}
+.page_full_content{ 	float:left;	padding:0;	width:960px;	}
+
+
+/*	
+-------------------------------------------
+	3. Page Right Sidebar
+-------------------------------------------
+*/
+.page_content_right{		background:url(../images/begin_shadow.png) no-repeat scroll left top transparent; float:left;	padding:0;	width:660px;	}
+.page_container_right{		background:url(../images/end_shadow.png) no-repeat scroll 300px bottom transparent; margin-bottom:30px;	margin-left:auto;	margin-right:auto;	width:960px;	display:table;	}
+.page_content_text_right{	display:table;	padding-left:30px;	}
+.page_left_content{			float:left;	width:300px;	}
+.page_left_warp{			display:table;	margin-bottom:20px;	width:280px;	}
+.page_left_warp h3{			border-bottom:1px solid #f1f5f7;	margin:0 0 10px 0;	padding:0 0 10px 0; }
+.page_right_content{		float:right;	width:240px;	}
+.page_right_navigation{		padding-left:15px;	margin-bottom:25px;	}
+
+
+
+.page_right_navigation ul li {									line-height: 19px;	padding: 8px 0;	position: relative;	margin: 0;	width: 220px;	}
+.page_right_navigation ul li a {								padding-left:10px;	}
+.page_right_navigation ul li ul.children li a {					padding-left:10px;	}
+.page_right_navigation ul li.current_page_item {				margin: 0 0 0 -31px;	padding: 0 0 0 16px;	width: 220px;	}
+.page_right_navigation ul li ul li.current_page_item {				margin: 0 0 0 -41px;	}
+.page_right_navigation ul li ul li ul li.current_page_item {			margin: 0 0 0 -51px;	}
+.page_right_navigation ul li ul li ul li ul li.current_page_item {		margin: 0 0 0 -61px;	}
+
+.page_right_navigation ul li.current_page_item a {								padding: 8px 0 0 25px;	display: block;	color: #ffffff;	}
+.page_right_navigation ul li.current_page_item  ul.children li a {					margin-left:15px;	}
+.page_right_navigation ul li ul.children li.current_page_item ul.children li a {		margin-left:25px;	}
+.page_right_navigation ul li ul.children li.current_page_item ul.children li a span {	padding-left:0px;	}
+
+.page_right_navigation ul li.current_page_item a span {					padding: 0 5px 8px 0;	display: block;	position: relative;	}
+.page_right_navigation ul li ul li.current_page_item a span {				padding: 0 5px 8px 25px;	}
+.page_right_navigation ul li ul li ul li.current_page_item a span {			padding: 0 5px 8px 35px;	}
+.page_right_navigation ul li ul li ul li ul li.current_page_item a span {			padding: 0 5px 8px 45px;	}
+
+.page_right_navigation ul li ul{								margin: 6px 0 -8px 0 !important;	}
+.sitemap ul li ul {	margin:6px 0 -3px !important;	}
+.page_right_navigation ul li.current_page_item ul{				margin: -2px 0 0px 0 !important;	}
+.page_right_navigation ul li.current_page_item ul li{				margin:0 !important;	padding:0;	}
+.page_right_navigation ul li.current_page_item ul li a,
+.page_right_navigation ul li.current_page_item ul li a span{		background:none;	}
+.page_right_navigation ul li.current_page_item ul.children{		padding-left:10px;	}
+.page_right_navigation ul li ul.children{						padding-left:10px;	}
+
+.page_right_sidebars {			padding-left:15px;	}
+.page_sidebar_warp{				margin-bottom:35px;	}
+.page_sidebar_warp ul li {			padding: 8px 0 8px 8px;	border-bottom:1px solid #f1f5f7;	}
+.page_sidebar_warp ul li ul{		margin:9px 0 -9px 0 !important;	}
+.page_sidebar_warp ul li ul{		border-top:1px solid #f1f5f7;	}
+.page_sidebar_warp ul li a{			padding-left:10px;	}
+
+.page_sidebar_warp ul li.recentcomments {		padding:0px;	padding-left:20px;	padding-bottom:10px;	margin-top:10px;	font-size:11px;	}
+.page_sidebar_warp ul li.recentcomments a{		background:none;	}
+.page_sidebar_warp ul li.recentcomments a.url{	font-weight:bold;	font-size:11px;	}
+
+
+
+
+/*	
+-------------------------------------------
+	4. Page Nav Numbers
+-------------------------------------------
+*/
+.page_nav_numbers ul li {			float:left;	color:#fff;	font-size:11px;	font-family:Tahoma;	font-weight:bold;	margin-right:10px;	display:table;	line-height:25px;	}
+.page_nav_numbers ul li.current a{	color:#fff;	}
+.page_nav_numbers ul li a{			height:25px;	display:table;	margin-left:10px;	padding-right:10px;	}
+.page_nav_numbers ul li a:hover{	color:#fff;	}	
+/**/
+.pagenav{						/*clear:both;	*/color:#555;	font-size:11px;	font-family:Tahoma;	text-align:right;	display:block;	}
+.pagenav span, .pagenav a {		display:inline-block;	text-decoration:none;	position:relative;	cursor:pointer;	padding:1px 9px;	margin:3px;	border:none;	}
+.pagenav span strong {				color:#fff;	}
+.pagenav a{						font-weight:bold;	color:#555;	}
+.pagenav a:hover{				color:#fff; text-decoration:none;	}
+/**/
+.pagenav-js  {					/*clear:both;	*/text-align:right;	display:block;	color:#fff; }
+.pagenav-js span.js-span {		float:left;	color:#fff;	font-size:11px;	font-family:Tahoma;	font-weight:bold;	margin-right:10px !important;	display:table;	line-height:25px;	color: #555;	}
+.pagenav-js span.js-span strong{	color:#fff;	}
+.pagenav-js span.js-span a,
+.pagenav-js span.js-span strong{	height:25px;	display:table;	margin-left:10px !important;	padding-right:10px !important;}
+.pagenav-js span.js-span a:hover{	color:#fff;	}	
+/*	
+-------------------------------------------
+	5. Page Image Border Skin
+-------------------------------------------
+*/
+.image_skin {			background-color:#E9E9E9;	border:1px solid #E5E5E5;	display:table;	float:left;	overflow:hidden;	position:relative;	}
+.image_inside_border {	border:1px solid #F9F9F9;	float:left;	font-size:0;	line-height:0;	padding:4px;	}
+.image_skin_anime {		float:left;	overflow:hidden;	position:relative;	background:url(../images/icons/loader.gif) no-repeat scroll transparent;	background-position:50% 50%;	background-repeat:no-repeat;	}
+.zoom_image{			background-image:url(../images/icons/zoom_image.png);	background-position:50% 50%;	background-repeat:no-repeat;						}
+.zoom_play{				background-image:url(../images/icons/zoom_play.png);	background-position:50% 50%;	background-repeat:no-repeat;						}
+
+
+/*	
+	C) Page Blog
+-------------------------------------------
+	1. Blog Container
+-------------------------------------------
+*/
+.blog_container{	background:url(../images/blog_shadow.png) no-repeat scroll center bottom transparent; display:table;	width:665px;	margin-bottom:25px;	padding-bottom:30px;	}
+.blog_head{			background:url(../images/blog_shadow.png) no-repeat scroll center bottom transparent; padding-bottom:5px;	padding-bottom:30px;	display:table;	width:100%;	}
+/*	
+-------------------------------------------
+	2. Blog Title & Icons & Description
+-------------------------------------------
+*/
+.blog_title h2{				margin-bottom:5px;	}
+.blog_info{					min-height:25px;	}
+.blog_info ul li{				float:left;	display:table;	font-size:11px;	font-family:Tahoma;	margin-right:20px;	margin-bottom:5px;	padding-left:20px;	}
+.blog_info ul li.category{		padding-left:25px;	}
+.blog_info ul li.comment_icon{	padding-left:25px;	}
+.blog_tag ul{					clear:both;	float:left;	display:table;		font-family:Tahoma;	margin-right:20px;	padding-left:20px;	}
+.blog_tag ul li{				font-size:9px;	margin:0;	padding:0;	float:left;	margin-right:5px;	}
+.blog_image{				margin-bottom:20px;	display:table;	float:left;	}
+.blog_text{					clear:both;	display:table;	}
+.blog_short_text{			display:table;	}
+.blog_detail_button{		margin-top:10px;	font-weight:bold;	float:left;	padding-right:10px;	}
+
+/*	
+-------------------------------------------
+	3. Blog & Site Comments
+-------------------------------------------
+*/
+.form-input input {				width:361px; 	height:23px; 	padding:5px 9px 0 9px; 	font-size:11px; color:#434343; 	background:url(../images/input_bg.png) 0 0 no-repeat; 	border:0;	}
+.form-textarea span {				width:444px; 	height:224px; 	display:block; 	margin-bottom:12px; 	background:url(../images/textarea_bg.png) 0 0 no-repeat; 	overflow:hidden;	}
+.form-textarea span textarea {		width:426px; 	height:218px; 	padding:3px 9px; 	background:none; 	font-size:11px; 	color:#434343; 	line-height:22px;	border:0;	}
+.comments ol li {					margin-bottom:10px;	margin-left:30px;	padding-left:10px;	}
+li.comment {						background:none repeat scroll 0 0 transparent;	margin:0 !important;	padding-left:0 !important;	}
+.comment_container {				background:none repeat scroll 0 0 #fafcfd;	border:1px solid #f0f0f0;	margin-bottom:10px;	min-height:80px;	overflow:hidden;	padding:20px 0px 20px 20px;	position:relative;	}
+.authcomment{					background:none repeat scroll 0 0 #f8f8f8 !important;	}
+.comment_author{				display:table;	float:left;	margin-right:20px;	}
+.comment_container .avatar {		border:1px solid #f8f8f8;	}
+.comment_content{				margin-bottom:10px;	min-height:80px;	overflow:hidden;	position:relative;	margin-right:10px;	}
+.comment_reply_link {			background:none repeat scroll 0 0 #ffffff;	border-left:1px solid #f0f0f0;	border-top:1px solid #f0f0f0;	bottom:0;	font-family:Tahoma;	font-size:10px;	right:0;	padding:0 8px 1px;	position:absolute;	}
+.comments .children {			margin-bottom:10px;	}
+.comments .children li {			background:url(../images/comment_li_left.png) no-repeat scroll 0 20px transparent;	border-left:1px solid #CACACA;	list-style:none outside none;	margin:0;	padding-bottom:10px;	padding-left:30px !important;	}
+.cancel_comment_reply a {		background:none repeat scroll 0 0 #F9F9F9;	border-left:1px solid #E8E8E8;	border-bottom:1px solid #E8E8E8;	right:0;	font-family:Tahoma;	font-size:10px;	top:0;	padding:0 8px 1px;	position:absolute;	}
+#respond form {					margin-bottom:10px;	background:none repeat scroll 0 0 #f8f8f8;	border:1px solid #DFDFDF;	overflow:hidden;	padding:10px 15px 30px;	position:relative;	}
+#respond label {					color:#5D5D5D;	display:block;	font-family:Helvetica,Arial;	font-size:12px;	padding-bottom:10px;	padding-top:10px;	font-weight:bold;	}
+#respond { 						display:table; clear:both; width:100%; }
+#respond h3{						margin-top:40px; }
+#comments_list #respond h3{		display:none;	}
+
+
+
+/*	
+	D) Page Portfolio
+-------------------------------------------
+	1. Portfolio Container
+-------------------------------------------
+*/
+.portfolio_container{		margin-bottom:30px;		margin-left:auto;	margin-right:auto;	width:960px;	display:table;	}
+.portfolio_box_container{	width:100%;	display:table;	margin-bottom:10px; }
+.portfolio_box{				padding-bottom:20px;	float:left;	display:table;	}
+/*	
+-------------------------------------------
+	2. Portfolio Title & Icon & Description
+-------------------------------------------
+*/
+.portfolio_details{					float:left;	display:table;	padding-top:10px;	}
+.portfolio_title{					font-size:22px;	font-weight:bold;	display:table;	padding-bottom:10px;	}
+.portfolio_text{					float:left;	}
+.portfolio_details_button{			font-weight:bold;	display:table;	margin-top:5px;	}
+
+
+
+	
+
+/*	
+	E) Page Contact
+-------------------------------------------
+	1. Contact Form
+-------------------------------------------
+*/
+.form_warp{	margin-bottom:10px;	display:table;	}
+.contact_form{	margin-top:30px;	display:table;	}
+.contact_form p{	clear:both;	display:table;	margin:10px 0 10px 0;	font-weight:bold;	}
+/*	
+-------------------------------------------
+	2. Contact Map
+-------------------------------------------
+*/
+.contact_map{			width:225px;	display:table;	float:left;	}
+.contact_map h3{			border-bottom:1px solid #f1f5f7;	margin:0 0 10px 0;	padding:0 0 10px 0; }
+.contact_gmap{			float:right;	display:table;	margin-left:40px;	}
+.gmap {					width:350px; height:250px;	border:0;	}
+
+
+/*	
+	E) SETTINGS !IMPORTANT
+*/
+.search_title{					margin-bottom:20px;	}
+.search_detail_button{			font-weight:bold;	float:left;	padding-right:10px;	}
+.div_center {					margin-left:auto; margin-right:auto; text-align:center;}
+.small_text {					width:361px; 	height:23px; 	padding:5px 9px 0 9px; 	font-size:11px; color:#434343; 	background:url(../images/input_bg.png) 0 0 no-repeat; 	border:0;	}
+.search_text_span{				float:left;	}
+.submit_span input{				float:left;	border:0;	height:28px;	color:#fff;	font-size:11px;	font-family:Tahoma;	font-weight:bold;	}
+.span_button_big{				height:30px;	display:table;	float:left;	}
+.button_big{					border:0;	background:none;	padding:0;	margin:0;	margin-left:10px;	height:30px;	padding-right:10px;	color:#fff;	font-size:11px;	font-family:Tahoma;	font-weight:bold;	cursor:pointer;	}
+.scroll_up{						width:28px;	height:28px;	display:table;	}
+
+
+/* getting main menu styles */
+.overallmenu{					font: bold 17px "Trebuchet MS";	margin-top:50px;	}
+.overallmenu ul li {				display: block;		padding:10px 15px 10px 10px;		}
+.overallmenu ul li ul li a{			font: 12px Verdana;	color: #ffffff;	/*text-shadow: 1px 1px #000000;*/	width: 165px; 	line-height:21px;	}
+.overallmenu ul li ul li ul li a{			width: 168px; 		}
+.overallmenu ul li ul li ul li {			width: 188px; 		}
+
+/* getting site logo styles */
+.header_logo{					margin-top:10px;	}
+
+/* getting fade slider styles */
+.slider_content{				background:none;	display:table;	}
+.slider_full{					height:320px;	}
+.banner_model_1{				min-height:320px;	}
+.slider_default{				height:320px;	}
+.slider_simple_image, 
+.slider_center_image img {		border:10px solid #ffffff;	}
+.slider_left_image,
+.slider_right_image	{			width:670px;	height:300px;	background-color:#ffffff;	background-position:319px 134px;	background-repeat:no-repeat;	border:10px solid #ffffff;	}
+.slider_left_image img,
+.slider_right_image	img{			width:670px;	height:300px;	}
+.slider_text .textspan,
+.slider_text_full .textspan{		font-size:12px;	color:#ffffff;	}
+.slider_text h2,
+.slider_text_full h2{			font-size:28px;	color:#ffffff;	}
+.slider_text{					width:250px;	}
+.slider_border,
+.slider_border img {				border:none;	}
+
+
+
+/* getting nivo slider styles */
+.ntitle {  						font-size:24px;	background:#ffffff;	color:#555555;	}
+.ndescription {  				font-size:12px;	color:#ffffff; }
+.hide_desc { 					position:absolute; z-index:50;  	margin-top:-86px; 	margin-left:10px; color:#000;  	}
+
+#sliderNivo {					width:940px;		height:300px; 	border:10px solid #ffffff;	margin-left:auto;	margin-right:auto;	}
+.banner_model_1	{				height:360px;	}
+.nivo-controlNav {				left:377px;	}
+.intro_text{					font-size:20px;	}
+.intro_image{					font-size:20px;	}
+.home_widget_content{			font-size:13px;	color:#555555;	}
+.home_widget_content h3{			font-size:22px;	color:#555555;	letter-spacing:0.4px;line-height:27px;	}
+.twt_container{					font-size:17px;	}

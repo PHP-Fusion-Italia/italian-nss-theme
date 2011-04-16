@@ -1,0 +1,138 @@
+/* 
+-------------------------------------------
+	SHORTCODES MAP
+-------------------------------------------
+	1.  General
+	2.  Simple Button
+	3.  Arrowlists & Checklists
+	4.  Box Styles
+	5.  Drop-Cap & Block Quotes
+	6.  Columns Styles
+	7.  Dividers Container
+	8.  Others
+-------------------------------------------
+*/
+
+
+/*	
+-------------------------------------------
+	1. General
+-------------------------------------------
+*/
+p {				line-height:21px;	margin-bottom:18px;	}
+strong { 			font-weight: bold; }
+h1, h2, h3, 
+h4, h5, h6 {		font-family:"Trebuchet MS",Arial,Helvetica,san-serif; 	letter-spacing:0.4px;	padding-bottom:10px;	font-weight:normal;	line-height:100%;	}
+h1{				font-size:36px;	}
+h2{				font-size:28px;	}
+h3{				font-size:22px;	}
+h4{				font-size:18px;	}
+h5{				font-size:16px;	}
+h6{				font-size:12px;	}
+code{			background:#f6f6f6 url(../images/codetag.png) repeat scroll 0 0;	display:table;	padding:0 10px 18px;	border:1px solid #ddd;	}
+p img {			padding: 0;	max-width: 100%;	}
+img.centered{	display: block;	margin-left: auto;	margin-right: auto;	}
+img.alignright{	padding: 4px;	margin: 0 0 2px 7px;	display: inline;	}
+img.alignleft{	padding: 4px;	margin: 0 7px 2px 0;	display: inline;	}
+.alignright {	float: right;	}
+.alignleft {		float: left;	}
+a{				color:#555;	}
+a:hover{		color:#000;	}
+
+.image_frame_center{	display: block;	margin-left: auto;	margin-right: auto;	}
+.image_frame_right{	padding: 4px;	margin: 0 0 2px 7px;	display: inline;	float: right;}
+.image_frame_left{	padding: 4px;	margin: 0 7px 2px 0;	display: inline;	float: left;}
+
+/*	
+-------------------------------------------
+	2. Simple Button
+-------------------------------------------
+*/
+.simple_button{			clear:both; 	color:#fff;	font-size:11px;	font-family:Tahoma;	font-weight:bold;	margin-right:10px;	margin-top:15px;	display:table;	line-height:28px;	}
+.simple_button a{		height:30px;	display:table;	margin-left:20px;	padding-right:20px;	}
+.simple_button a:hover{	color:#fff;	}
+
+
+/*	
+-------------------------------------------
+	3. Arrowlists & Checklists
+-------------------------------------------
+*/
+.ul_arrow_list,
+.ul_check_list,
+.ul_plus_list,
+.ul_star_list,
+.ul_pencil_list{	clear:both; margin:10px 10px 10px 0; display:table;	}
+
+.ul_star_list li,
+.ul_plus_list li,
+.ul_check_list li,
+.ul_pencil_list li{	padding-top:5px;	padding-bottom:5px;	padding-left:25px;	}
+.ul_arrow_list li{	padding-top:5px;	padding-bottom:5px;	padding-left:15px;	}
+/*	
+-------------------------------------------
+	4. Box Styles
+-------------------------------------------
+*/
+.download_box {		background:url(../images/icons/download_box.png) no-repeat scroll 15px center #e3ffcd;	border:1px solid #A3C159;	color:#5E6F33; }					
+.info_box {			background:url(../images/icons/info_box.png) no-repeat scroll 20px center #bbddff;	border:1px solid #5997d1;	color:#467eb5;	}
+.warning_box {		background:url(../images/icons/warning_box.png) no-repeat scroll 20px center #ffc7c2;	border:1px solid #ff8c80;	color:#d73224; }
+.note_box {			background:url(../images/icons/note_box.png) no-repeat scroll 20px center #fff0bc;	border:1px solid #d3bc6f;	color:#9E660D;	}
+.message_box {		background:url(../images/icons/message_box.png) no-repeat scroll 10px center #f4f4f4;	border:1px solid #dcdcdc;	color:#747474;	}
+.simple_box {		background-color:#fcfcfc; padding-left:20px !important; border:1px solid #f1f1f1;	color:#747474;	}
+.info_boxes{		clear:both;	margin:5px 0;	padding:20px 20px 20px 70px;	}
+
+
+/*	
+-------------------------------------------
+	5. Drop-Cap & Block Quotes
+-------------------------------------------
+*/
+.dropcap{				display:block;	float:left;	font-size:70px;	line-height:60px;	margin:0 8px 0 0;	color:#ccc;	font-family:"Trebuchet MS";	}
+.pquote, .quote { 		margin: 25px 0 25px 0; background-color:#f9f9f9; padding: 20px 10px 10px 20px; border-left: 5px solid #ccc; font-size: 13px; line-height: 1.45em; /*font-style: italic;*/ color:#666;}
+.pquote_left { 			margin: 5px 25px 10px 0; width:30%; float:left; background-color:#f9f9f9; padding: 20px 10px 10px 20px; border-left: 5px solid #ccc; font-size: 13px; line-height: 1.45em; font-style: italic; color:#666;}
+.pquote_right { 			margin: 5px 0 10px 25px; width:30%; float:right; background-color:#f9f9f9; padding: 20px 10px 10px 20px; border-right: 5px solid #ccc; font-size: 13px; line-height: 1.45em; font-style: italic; color:#666;}
+.pquote_message {		padding: 15px 10px 0 40px;	font-size: 13px; 	line-height: 1.45em; 	/*font-style: italic;*/ 	color:#666;	}
+.pquote_message p{ 		padding-right:40px;	}
+.pquote_message span {	color:#999;	font-size:10px;	}
+
+
+/*	
+-------------------------------------------
+	6. Columns Styles
+-------------------------------------------
+*/
+.basic_columns h5,
+.basic_columns h4,
+.basic_columns h3,
+.basic_columns h2,
+.basic_columns h1{	margin-bottom:10px;	border-bottom:1px solid #f1f5f7;	}
+.basic_columns {		float:left;	margin-right:5%;	position:relative;	}
+.one_half {			width:47.5%;	}
+.one_third {			width:30%;		}
+.one_fourth{		width:21.2%;	}
+.one_fifth {			width:16%;		}
+.two_third {			width:65%;		}
+.three_fourth {		width:73%;		}
+.last {				clear:right;	margin-right:0 !important;	}
+
+
+
+/*	
+-------------------------------------------
+	7. Dividers
+-------------------------------------------
+*/
+.divider_pad{			clear:both;	display:block;	width:100%; }
+.divider_hr{			clear:both;	display:block;	width:100%;	margin-bottom:20px;	padding-top:5px;	border-bottom:1px solid #f1f5f7;	}
+.divider_with_top{		clear:both;	display:block;	width:100%;	margin-bottom:40px;	padding-top:35px;	border-bottom:1px solid #f1f5f7;	font-size:9px;	line-height:10px;	position:relative;	text-align:right;	}
+.divider_with_top a {	background:none repeat scroll 0 0 #FFFFFF;	color:#CCCCCC;	height:20px;	position:absolute;	right:0;	top:30px;	width:20px;	}
+
+
+/*	
+-------------------------------------------
+	8. Others
+-------------------------------------------
+*/
+.text_justify{			text-align:justify;	}
+.sitemap ul li { width:400px !important; 	padding:3px 0 !important;}
