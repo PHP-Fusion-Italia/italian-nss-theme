@@ -38,7 +38,7 @@ if (!defined("IN_IT_NSS")) { die("Access Denied"); }
 		</div>
 		<div class="headlines_text">
 			<ul id="news_ticker">
-				<li><a href="<?php echo BASEDIR; ?>faq.php?cat_id=2#faq_34"><span>1) Specifica l'<strong>indirizzo</strong> del tuo sito PHP-Fusion nel profilo.</span></a></li>
+				<li><a href="<?php echo BASEDIR; ?>faq.php?cat_id=2#faq_34"><span>1) Specifica l'<strong>indirizzo</strong> del tuo sito PHP-Fusion nel profilo.</span></a><?php if (iMEMBER) : ?> <a href="<?php echo BASEDIR; ?>edit_profile.php"><span>Modifica il tuo profilo.</span></a><?php endif; ?></li>
 				<li style="display:none;"><a href="<?php echo BASEDIR; ?>faq.php?cat_id=2#faq_34"><span>2) Prima <strong>cerca</strong>, poi apri un discussione.</span></a> <a href="<?php echo BASEDIR; ?>search.php"><span>Vai al motore di ricerca.</span></a></li>
 				<li style="display:none;"><a href="<?php echo BASEDIR; ?>faq.php?cat_id=2#faq_34"><span>3) Usa <strong>oggetti descrittivi</strong> nelle discussioni che apri e assicurati di farlo nella sezione pi&ugrave; idonea.</span></a></li>
 				<li style="display:none;"><a href="<?php echo BASEDIR; ?>faq.php?cat_id=2#faq_34"><span>4) Un solo argomento per discussione, <strong>no off-topic</strong> e <strong>no cross-posting</strong>.</span></a></li>

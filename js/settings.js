@@ -9,12 +9,14 @@ $nivo_slider_effect = 'random';
 $headlines_delay = 5000;
 
 /* play with jQuery */
+/*
 jQuery(document).ready(function() {
 	jQuery('a').wrap('<span class="js-span"></span>');
 	jQuery('.pagenav').addClass('pagenav-js').removeClass('pagenav');
 	jQuery('.pagenav-js span').addClass('js-span');
 	jQuery('#page-viewthread table .pagenav-js').hide();
 });
+*/
 jQuery(document).ready(function() {
 	jQuery('.it_nss_js_show').show().removeClass('it_nss_js_show');
 });

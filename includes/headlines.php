@@ -53,11 +53,14 @@ if ($rows) : ?><!-- begin headlines text -->
 		GROUP BY news_id
 		ORDER BY news_sticky DESC, news_datestamp DESC LIMIT 0,5"
 	);
+	$i = 0;
 	while ($data = dbarray($result)) {
-		echo "\t\t\t\t<li id='news_".$data['news_id']."'><a href='".BASEDIR."news.php?readmore=".$data['news_id']."'><span>[".showdate("%d/%m/%Y", $data['news_datestamp'])."] ".stripslashes($data['news_subject']);
+		echo "\t\t\t\t<li id='news_".$data['news_id']."'".($i > 0 ? " style='display:none;'" : "")."><a href='".BASEDIR."news.php?readmore=".$data['news_id']."'><span>[".showdate("%d/%m/%Y", $data['news_datestamp'])."] ".stripslashes($data['news_subject']);
 		echo $data['news_sticky'] ? "<span class='bullhorn'><img src='".STATIC_DOMAIN."images/icons/bullhorn.png' alt='In Rilievo!'/></span>" : "";
 		echo "</span></a></li>\n";
+		$i++;
 	}
+	unset($i);
 ?>
 			</ul>
 		</div>
