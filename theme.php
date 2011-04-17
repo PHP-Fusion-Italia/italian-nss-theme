@@ -192,8 +192,8 @@ function render_page($license=false) {
 				echo "<div class='copyright_text'><a href='http://themeforest.net/item/overall-premium-wordpress-blog-portfolio-theme/124861' rel='nofollow' target='_blank'>OverAll theme</a> Copyright &copy; 2009 - 2010 <a href='http://themeforest.net/user/Codestar' rel='nofollow' target='_blank'>Codestar</a>, All Rights Reserved - Ported to PHP-Fusion for the Italian <abbr title='National Support Site'>NSS</abbr> (http://php-fusion.it) by <a href='http://www.valeriovendrame.it/' target='_blank'>Valerio Vendrame (lelebart)</a></div>\n\t\t\t";
 				echo "<div class='footer_social_networks'>\n\t\t\t\t";
 					echo "<ul>\n";	// Social Networks
-						echo "\t\t\t\t\t<li><a href='https://twitter.com/PHPFusion'><img src='".STATIC_DOMAIN."images/social_networks/twitter.png' alt='PHP-Fusion su Twitter' /></a></li>\n"; // Official Twitter
-						echo "\t\t\t\t\t<li><a href='https://www.facebook.com/group.php?gid=75392069884'><img src='".STATIC_DOMAIN."images/social_networks/facebook.png' alt='PHP-Fusion su Facebook' /></a></li>\n"; // Official Facebook Group
+						echo "\t\t\t\t\t<li><a href='https://twitter.com/phpfusionitalia'><img src='".STATIC_DOMAIN."images/social_networks/twitter.png' alt='PHP-Fusion Italia su Twitter' /></a></li>\n"; // Official Twitter
+						echo "\t\t\t\t\t<li><a href='https://www.facebook.com/pf.italia'><img src='".STATIC_DOMAIN."images/social_networks/facebook.png' alt='PHP-Fusion Italia su Facebook' /></a></li>\n"; // Official Facebook Group
 						echo "\t\t\t\t\t<li><a href='https://www.youtube.com/phpfusion'><img src='".STATIC_DOMAIN."images/social_networks/youtube.png' alt='PHP-Fusion su YouTube' /></a></li>\n";  // Official YouTube Channel
 					if (RSS) {  // RSS - go to config.php
 						echo "\t\t\t\t\t<li><a href='".RSS."'><img src='".STATIC_DOMAIN."images/social_networks/feed.png' alt='RSS' /></a></li>\n";
