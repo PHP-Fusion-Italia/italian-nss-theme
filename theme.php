@@ -267,6 +267,7 @@ function it_nss_panelstate($state, $bname) {
 
 function render_news($subject, $news, $info) {
 	global $locale, $settings;
+	$subject = strip_tags($subject);
 	echo "\t\t\t\t\t<div class='blog_head'>\n";
 		echo "\t\t\t\t\t\t<div class='blog_title'><h2>".(isset($_GET['readmore'])?"":"<a href='".FUSION_SELF."?readmore=".$info['news_id']."'>")."".$subject."".(isset($_GET['readmore'])?"":"</a>")."</h2></div>\n";
 		echo "\t\t\t\t\t\t<div class='blog_info'>\n\t\t\t\t\t\t\t<ul>\n";
@@ -288,7 +289,6 @@ function render_news($subject, $news, $info) {
 			}
 		echo "\t\t\t\t\t\t\t</ul>\n\t\t\t\t\t\t</div>\n";
 	echo "\t\t\t\t\t</div>\n";
-	$subject = strip_tags($subject);
 	echo "\t\t\t\t\t<div class='blog_text'>\n";
 		if (!empty($info['cat_image'])) {
 			echo "\t\t\t\t\t\t<div class='image_frame_right'><div class='image_skin'><div class='image_inside_border'>";
@@ -308,6 +308,7 @@ function render_news($subject, $news, $info) {
 
 function render_article($subject, $article, $info) {
 	global $locale, $settings;
+	$subject = strip_tags($subject);
 	echo "\t\t\t\t\t<div class='blog_head'>\n";
 		echo "\t\t\t\t\t\t<div class='blog_title'><h2>".(isset($_GET['article_id'])?"":"<a href='".FUSION_SELF."?article_id=".$info['article_id']."'>")."".$subject."".(isset($_GET['article_id'])?"":"</a>")."</h2></div>\n";
 		echo "\t\t\t\t\t\t<div class='blog_info'>\n\t\t\t\t\t\t\t<ul>\n";
@@ -325,7 +326,6 @@ function render_article($subject, $article, $info) {
 			}
 		echo "\t\t\t\t\t\t\t</ul>\n\t\t\t\t\t\t</div>\n";
 	echo "\t\t\t\t\t</div>\n";
-	$subject = strip_tags($subject);
 	echo "\t\t\t\t\t<div class='blog_text'>\n";
 		echo "\t\t\t\t\t\t<div>".($info['article_breaks'] == "y" ? nl2br($article) : $article)."</div>\n";
 		$readmore = "Letto ".$info['article_reads']." volte ".THEME_BULLET." ";
