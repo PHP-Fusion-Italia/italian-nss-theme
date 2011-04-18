@@ -310,6 +310,9 @@ table td { vertical-align: top; }
 /* The value attribute on li elements */
 .forum_thread_user_post li[value], ol.comments-list>li li[value] { counter-reset: list-item attr(value, integer, 1); counter-increment: none; }
 
+/* Chili */
+pre code ol, pre code ul, pre code li { margin-top: 0 !important; margin-bottom: 0 !important; padding-top: 0 !important; padding-bottom: 0 !important; }
+
 /* Poll */
 .poll {
 	height:20px;
