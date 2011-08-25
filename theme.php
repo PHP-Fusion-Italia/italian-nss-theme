@@ -140,7 +140,7 @@ function render_page($license=false) {
 					echo "<li><a href='http://dev.php-fusion.co.uk/' target='_blank'>PHP-Fusion Dev</a></li>\n\t\t\t\t\t\t";
 					echo "<li><a href='http://staff.php-fusion.co.uk/' target='_blank'>PHP-Fusion Staff</a></li>\n\t\t\t\t\t\t";
 					echo "<li><a href='http://www.cafepress.com/phpfusion/' target='_blank'>PHP-Fusion Store</a></li>\n\t\t\t\t\t\t";
-					echo "<li><a href='http://code.starefossen.com/infusions/fusion_functions/' target='_blank'>Fusion Functions</a></li>\n\t\t\t\t\t\t";
+/* dead link */				//	echo "<li><a href='http://code.starefossen.com/infusions/fusion_functions/' target='_blank'>Fusion Functions</a></li>\n\t\t\t\t\t\t";
 					echo "<li><a href='http://themes.php-fusion.co.uk/' target='_blank'><span>Themes</span></a> ".THEME_BULLET." <a href='http://phpfusion-themes.com/' target='_blank'>Fuzed Themes</a></li>\n\t\t\t\t\t\t"; // style='text-decoration:line-through;'
 					echo "<li><a href='http://mods.php-fusion.co.uk/' target='_blank'><span>Mods</span></a> ".THEME_BULLET." <a href='http://www.phpfusion-mods.net/' target='_blank'>Fusion Mods.net</a></li>\n\t\t\t\t\t"; //  style='text-decoration:line-through;'
 				echo "</ul>\n\t\t\t\t";
