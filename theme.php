@@ -182,10 +182,12 @@ function render_page($license=false) {
 				echo "<div class='footer_contact'>\n\t\t\t\t\t\t";
 					echo "<ul>\n\t\t\t\t\t\t\t";
 						echo "<li class='address'>".showcounter()."</li>\n\t\t\t\t\t\t\t"; // Visits
-						echo "<li class='phone'><a href='http://staff.php-fusion.co.uk/infusions/crv_report/crv_report.php' rel='nofollow' target='_blank'>Segnala una violazione di copyright</a> sul .co.uk</li>\n\t\t\t\t\t\t\t"; // Report CR Violation
+					//	echo "<li class='phone'><a href='http://staff.php-fusion.co.uk/infusions/crv_report/crv_report.php' rel='nofollow' target='_blank'>Segnala una violazione di copyright</a> sul .co.uk</li>\n\t\t\t\t\t\t\t"; // Report CR Violation
+						echo "<li class='phone'><a href='http://next.php-fusion.co.uk/infusions/crv_report/crv_report.php' rel='nofollow' target='_blank'>Segnala una violazione di copyright</a> sul .co.uk</li>\n\t\t\t\t\t\t\t"; // Report CR Violation
 						echo "<li class='email'><a href='mailto:admin@php-fusion.it'>admin@php-fusion.it</a></li>\n\t\t\t\t\t\t\t"; // admin
 						echo "<li class='support'><a href='".BASEDIR."contact.php' rel='nofollow'>Scrivici dal modulo contatti online</a> di questo sito</li>\n\t\t\t\t\t\t\t"; // Contact Page
-						echo "<li class='support'><a href='http://github.com/gionn/PHP-Fusion-locales-it/archives/master' rel='nofollow' target='_blank'>Stato della traduzione Italiana</a> su GitHub</li>\n\t\t\t\t\t\t"; // GitHub
+					//	echo "<li class='support'><a href='http://github.com/gionn/PHP-Fusion-locales-it/archives/master' rel='nofollow' target='_blank'>Stato della traduzione Italiana</a> su GitHub</li>\n\t\t\t\t\t\t"; // GitHub
+						echo "<li class='support'><a href='http://github.com/PHP-Fusion-Italia/PHP-Fusion-locales-it/archives/master' rel='nofollow' target='_blank'>Stato della traduzione Italiana</a> su GitHub</li>\n\t\t\t\t\t\t"; // GitHub
 					echo "</ul>\n\t\t\t\t\t\t";
 				echo "</div>\n\t\t\t\t\t";
 			echo "</div>\n\t\t\t\t";
